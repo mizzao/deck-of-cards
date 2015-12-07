@@ -921,9 +921,7 @@ var Deck = (function () {
     }
   }
 
-  function Deck(jokers) {
-    // init cards array
-    var cards = new Array(jokers ? 55 : 52);
+  function Deck(cards) {
 
     var $el = createElement('div');
     var self = observable({ mount: mount, unmount: unmount, cards: cards, $el: $el });
